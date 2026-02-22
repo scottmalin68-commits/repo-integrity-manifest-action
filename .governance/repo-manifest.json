@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0.0-full",
-  "generated_at": "2026-02-22T16:01:52.406Z",
+  "generated_at": "2026-02-22T16:03:40.433Z",
   "repository": "https://github.com/scottmalin68-commits/repo-integrity-manifest-action",
-  "commit_sha": "75bc9fd4b6b7c9d96c1781052c6420bea4a15b9a",
+  "commit_sha": "c75c5370adfac3cd2e622464fc96d092cc90f0c3",
   "files": [
     {
       "path": "BANNER_repo-integrity-manifest-action.png",
@@ -21,6 +21,25 @@
         "author": "Scott Malin",
         "email": "scottmalin68@gmail.com",
         "timestamp": "2026-02-22T10:48:09-05:00"
+      }
+    },
+    {
+      "path": "CHANGELOG.md",
+      "sha256": "d2555a6262a0a649de2b7ce7808767fa7b1fec066faf72ffd26882b09cd63cc1",
+      "size_bytes": 1837,
+      "mime_type": "text/plain",
+      "permissions": "644",
+      "is_executable": false,
+      "is_lfs_tracked": false,
+      "entropy": 4.87,
+      "ignore_status": "tracked",
+      "created_at": "2026-02-22T11:03:31-05:00",
+      "contributor_count": 1,
+      "last_commit": {
+        "sha": "c75c5370adfac3cd2e622464fc96d092cc90f0c3",
+        "author": "Scott Malin",
+        "email": "scottmalin68@gmail.com",
+        "timestamp": "2026-02-22T11:03:31-05:00"
       }
     },
     {
