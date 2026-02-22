@@ -1,9 +1,5 @@
 name: "Repo Integrity Manifest Action"
-description: "Generates a governance-grade manifest of all files in the repository and commits it back to the repo."
-author: "Scott Malin"
-branding:
-  icon: "shield"
-  color: "blue"
+description: "Generates deterministic JSON and Markdown integrity manifests for all files in the repository."
 
 runs:
   using: "composite"
@@ -16,9 +12,9 @@ runs:
     - name: Set up Node.js
       uses: actions/setup-node@v4
       with:
-        node-version: "20"
+        node-version: 20
 
-    - name: Install dependencies (none needed)
+    - name: No dependencies required
       run: echo "No dependencies required"
       shell: bash
 
@@ -26,15 +22,19 @@ runs:
       run: node generate-manifest.mjs
       shell: bash
 
-    - name: Commit manifest back to repo
+    - name: Commit updated manifests
       run: |
         git config user.name "repo-integrity-bot"
-        git config user.email "bot@users.noreply.github.com"
-        git add .governance/repo-manifest.json
-        if git diff --cached --quiet; then
-          echo "No changes to commit"
-        else
+        git config user.email "repo-integrity-bot@users.noreply.github.com"
+
+        # Stage the entire governance directory (JSON + Markdown)
+        git add .governance/
+
+        # Only commit if there are changes
+        if ! git diff --cached --quiet; then
           git commit -m "Update repo integrity manifest"
           git push
+        else
+          echo "No manifest changes to commit"
         fi
       shell: bash
