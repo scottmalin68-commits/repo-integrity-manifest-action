@@ -1,25 +1,25 @@
 {
   "schema_version": "1.0.0-full",
-  "generated_at": "2026-02-22T18:07:43.471Z",
+  "generated_at": "2026-02-22T18:09:42.333Z",
   "repository": "https://github.com/scottmalin68-commits/repo-integrity-manifest-action",
-  "commit_sha": "4e3f731ac6b6703aeae1ab54f8c85b46c1b693bc",
+  "commit_sha": "312ffc822958c37fabbec941d3d2fd477dfc2b21",
   "files": [
     {
       "path": ".governance/repo-manifest.json",
-      "sha256": "fc66efdecb33f75a8082f3f398bd7740db1d5dc74ad04576aa8a069a30fa84dd",
-      "size_bytes": 4676,
+      "sha256": "cba04b0f6bf07d787d50db4231c0de65eaabf7848a5ad1d4b9a3795a73e57f18",
+      "size_bytes": 5090,
       "mime_type": "application/json",
       "permissions": "644",
       "is_executable": false,
       "is_lfs_tracked": false,
-      "entropy": 4.78729591661749,
+      "entropy": 4.789815628832591,
       "ignore_status": "tracked",
       "contributor_count": 0,
       "last_commit": {
-        "sha": "42c575ff82edc16e148a517df3ab8bccbed975cd",
+        "sha": "080ff2723f2e76fc6d13cf091472b98974350ff4",
         "author": "repo-integrity-bot",
         "email": "bot@users.noreply.github.com",
-        "timestamp": "Sun Feb 22 16:03:40 2026 +0000"
+        "timestamp": "Sun Feb 22 18:07:43 2026 +0000"
       }
     },
     {
@@ -114,20 +114,20 @@
     },
     {
       "path": "README.md",
-      "sha256": "f03110bb9a5314880464c6defc080a57149892eb16ce7584d312e45dd31e4404",
-      "size_bytes": 6618,
+      "sha256": "5058f749d928d2e0bfff04beb740ae166007f8eb5337e6b51c1993c8455975df",
+      "size_bytes": 7067,
       "mime_type": "text/plain",
       "permissions": "644",
       "is_executable": false,
       "is_lfs_tracked": false,
-      "entropy": 5.059034189728905,
+      "entropy": 5.111295678501226,
       "ignore_status": "tracked",
       "contributor_count": 0,
       "last_commit": {
-        "sha": "75bc9fd4b6b7c9d96c1781052c6420bea4a15b9a",
+        "sha": "335d4b65a61c2bb5f24ccd357cb696a589983d27",
         "author": "Scott Malin",
         "email": "scottmalin68@gmail.com",
-        "timestamp": "Sun Feb 22 11:01:38 2026 -0500"
+        "timestamp": "Sun Feb 22 13:09:23 2026 -0500"
       }
     },
     {
