@@ -20,6 +20,7 @@ runs:
 
     - name: Install dependencies (none needed)
       run: echo "No dependencies required"
+      shell: bash
 
     - name: Generate manifest
       run: node generate-manifest.mjs
