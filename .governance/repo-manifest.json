@@ -1,25 +1,43 @@
 {
   "schema_version": "1.0.0-full",
-  "generated_at": "2026-02-22T18:30:07.813Z",
+  "generated_at": "2026-02-22T20:44:18.485Z",
   "repository": "https://github.com/scottmalin68-commits/repo-integrity-manifest-action",
-  "commit_sha": "cab013e788fee49bcfea113829f86347354808fa",
+  "commit_sha": "5078afcbbfcadd5c35265635d53717f2aa9465b0",
   "files": [
     {
       "path": ".governance/repo-manifest.json",
-      "sha256": "5061296421425bf4fecc76fbeed1ee78ab22563936f9bd09411ce7800f2a8416",
+      "sha256": "eba84637c7aa1f92779baced678d05bf80c5513574468b4d033e570f808de8aa",
       "size_bytes": 5686,
       "mime_type": "application/json",
       "permissions": "644",
       "is_executable": false,
       "is_lfs_tracked": false,
-      "entropy": 4.787096095386104,
+      "entropy": 4.785981411255662,
       "ignore_status": "tracked",
       "contributor_count": 0,
       "last_commit": {
-        "sha": "6c2aa94b193b28175b849d24a1455265307f4937",
+        "sha": "a7c79c562d3b0c5ec3a93d07b574ebb4dbf323bf",
         "author": "repo-integrity-bot",
-        "email": "bot@users.noreply.github.com",
-        "timestamp": "Sun Feb 22 18:12:21 2026 +0000"
+        "email": "repo-integrity-bot@users.noreply.github.com",
+        "timestamp": "Sun Feb 22 18:30:07 2026 +0000"
+      }
+    },
+    {
+      "path": ".governance/repo-manifest.md",
+      "sha256": "5b928040f81b5dec2f28e40315889880a1684b0ae3b700d52562c2ce9c2b7e02",
+      "size_bytes": 1167,
+      "mime_type": "text/plain",
+      "permissions": "644",
+      "is_executable": false,
+      "is_lfs_tracked": false,
+      "entropy": 5.032536161213147,
+      "ignore_status": "tracked",
+      "contributor_count": 0,
+      "last_commit": {
+        "sha": "a7c79c562d3b0c5ec3a93d07b574ebb4dbf323bf",
+        "author": "repo-integrity-bot",
+        "email": "repo-integrity-bot@users.noreply.github.com",
+        "timestamp": "Sun Feb 22 18:30:07 2026 +0000"
       }
     },
     {
@@ -60,20 +78,20 @@
     },
     {
       "path": "CHANGELOG.md",
-      "sha256": "d2555a6262a0a649de2b7ce7808767fa7b1fec066faf72ffd26882b09cd63cc1",
-      "size_bytes": 1837,
+      "sha256": "e136321b29f665f23ced93763eec746df890c1e13e57d1f866539e4b7b2ab07a",
+      "size_bytes": 2294,
       "mime_type": "text/plain",
       "permissions": "644",
       "is_executable": false,
       "is_lfs_tracked": false,
-      "entropy": 4.869569683848989,
+      "entropy": 4.8727500406557995,
       "ignore_status": "tracked",
       "contributor_count": 0,
       "last_commit": {
-        "sha": "c75c5370adfac3cd2e622464fc96d092cc90f0c3",
+        "sha": "e772bd088a90178d281106493d7af01cc0e62a31",
         "author": "Scott Malin",
         "email": "scottmalin68@gmail.com",
-        "timestamp": "Sun Feb 22 11:03:31 2026 -0500"
+        "timestamp": "Sun Feb 22 13:35:14 2026 -0500"
       }
     },
     {
