@@ -98,6 +98,28 @@ This creates a **self‑maintaining integrity ledger** for your repository.
 
 ---
 
+## 🔄 A Note on Git Pulls and Bot Commits
+
+Because this Action commits the updated integrity manifest back to the repository on every run, you may occasionally see this behavior when pushing your own changes:
+
+- Your push triggers the workflow  
+- The workflow updates the manifest  
+- The bot commits the updated manifest to `main`  
+- Your local branch is now behind `origin/main`  
+
+This is expected for governance workflows that auto‑commit artifacts.
+
+If you see a message requiring you to fetch or pull before pushing, simply run:
+
+\```bash
+git pull --rebase
+\```
+
+or work in a feature branch and open a pull request.  
+This ensures your changes integrate cleanly with the bot‑generated manifest updates.
+
+---
+
 ## 📦 Usage
 
 Add this workflow to your repo:
@@ -174,6 +196,28 @@ Future versions may introduce:
 - Optional artifact‑only mode  
 - Optional diff reporting  
 - Optional severity scoring  
+
+---
+
+# 🧠 Best Practices for Using This Action
+
+To get the most value from this Action:
+
+### **1. Use feature branches for development**  
+This avoids frequent fetch/pull cycles caused by bot commits.
+
+### **2. Use `git pull --rebase` instead of `git pull`**  
+Keeps your commit history clean and linear.
+
+### **3. Treat the manifest as a governance artifact**  
+Do not manually edit `.governance/repo-manifest.json`.  
+It is fully managed by the Action.
+
+### **4. Run the Action on both `push` and `pull_request`**  
+This ensures integrity checks occur before merging.
+
+### **5. Tag stable releases (`v1`, `v1.0.0`)**  
+This allows other repositories to depend on your Action reliably.
 
 ---
 
