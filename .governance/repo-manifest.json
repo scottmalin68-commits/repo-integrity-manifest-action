@@ -1,43 +1,43 @@
 {
   "schema_version": "1.0.0-full",
-  "generated_at": "2026-02-22T18:12:21.144Z",
+  "generated_at": "2026-02-22T18:30:07.813Z",
   "repository": "https://github.com/scottmalin68-commits/repo-integrity-manifest-action",
-  "commit_sha": "5b82bd2c59962fe22ee568aaaa6239c9e2e02c4d",
+  "commit_sha": "cab013e788fee49bcfea113829f86347354808fa",
   "files": [
     {
       "path": ".governance/repo-manifest.json",
-      "sha256": "39269b963f987eb14aa252c9a031aecfb267b4aa6424190741d497c110663e4c",
-      "size_bytes": 5091,
+      "sha256": "5061296421425bf4fecc76fbeed1ee78ab22563936f9bd09411ce7800f2a8416",
+      "size_bytes": 5686,
       "mime_type": "application/json",
       "permissions": "644",
       "is_executable": false,
       "is_lfs_tracked": false,
-      "entropy": 4.793301296982072,
+      "entropy": 4.787096095386104,
       "ignore_status": "tracked",
       "contributor_count": 0,
       "last_commit": {
-        "sha": "49f6fa23e745e5375231273bc603084cbdb5f1dd",
+        "sha": "6c2aa94b193b28175b849d24a1455265307f4937",
         "author": "repo-integrity-bot",
         "email": "bot@users.noreply.github.com",
-        "timestamp": "Sun Feb 22 18:09:42 2026 +0000"
+        "timestamp": "Sun Feb 22 18:12:21 2026 +0000"
       }
     },
     {
       "path": "action.yml",
-      "sha256": "c92936341cc71b0138794d66d830c75953a651933b75451e8fc85e4bab8fe8ed",
-      "size_bytes": 1067,
+      "sha256": "c26fe2112ea8434d7027476c9cfaa9edd5f42502f1e25fd2a0af2ee400e9c161",
+      "size_bytes": 1098,
       "mime_type": "text/plain",
       "permissions": "644",
       "is_executable": false,
       "is_lfs_tracked": false,
-      "entropy": 4.302663434985092,
+      "entropy": 4.317548768811185,
       "ignore_status": "tracked",
       "contributor_count": 0,
       "last_commit": {
-        "sha": "66f4d39ddf267fd1b845bfab791aa442082b9255",
+        "sha": "cab013e788fee49bcfea113829f86347354808fa",
         "author": "Scott Malin",
         "email": "scottmalin68@gmail.com",
-        "timestamp": "Sun Feb 22 10:40:34 2026 -0500"
+        "timestamp": "Sun Feb 22 13:29:58 2026 -0500"
       }
     },
     {
