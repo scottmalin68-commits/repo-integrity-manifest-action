@@ -2,6 +2,22 @@
   <img src="BANNER_repo-integrity-manifest-action.png" alt="Repo Integrity Manifest Action Banner" />
 </p>
 
+<p align="center">
+
+  <!-- Version Badge -->
+  <img src="https://img.shields.io/github/v/tag/scottmalin68-commits/repo-integrity-manifest-action?label=version&color=blue" alt="Version Badge" />
+
+  <!-- Workflow Status -->
+  <img src="https://img.shields.io/github/actions/workflow/status/scottmalin68-commits/repo-integrity-manifest-action/test.yml?label=CI%20Status" alt="CI Status Badge" />
+
+  <!-- License -->
+  <img src="https://img.shields.io/github/license/scottmalin68-commits/repo-integrity-manifest-action" alt="License Badge" />
+
+  <!-- Marketplace -->
+  <img src="https://img.shields.io/badge/GitHub%20Marketplace-Coming%20Soon-blue?logo=github" alt="Marketplace Badge" />
+
+</p>
+
 # 📘 repo-integrity-manifest-action  
 **A governance‑grade GitHub Action that generates a deterministic integrity manifest for every file in your repository — and commits it back automatically.**
 
@@ -24,6 +40,35 @@ Every run produces a `.governance/repo-manifest.json` file containing:
 - Last commit metadata  
 
 This gives you a **deterministic, audit‑ready view** of your repository at every commit.
+
+---
+
+# 🧭 Why This Action Exists
+
+Modern repositories evolve constantly — files appear, disappear, mutate, and drift.  
+Security teams, auditors, and engineering leaders need **deterministic, machine‑readable evidence** of what a repository contains at any point in time.
+
+Traditional CI pipelines don’t provide:
+
+- A full file inventory  
+- Cryptographic hashing  
+- Entropy analysis  
+- Contributor metadata  
+- Deterministic ordering  
+- A persistent, committed ledger of changes  
+
+This Action fills that gap.
+
+It creates a **self‑maintaining integrity manifest**, enabling:
+
+- Governance workflows  
+- Compliance reporting  
+- Supply‑chain security  
+- Drift detection  
+- CI/CD enforcement  
+- Repository forensics  
+
+It turns your repository into a **verifiable, auditable asset**.
 
 ---
 
