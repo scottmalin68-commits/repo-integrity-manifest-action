@@ -1,0 +1,103 @@
+{
+  "schema_version": "1.0.0-full",
+  "generated_at": "2026-02-22T15:40:44.521Z",
+  "repository": "https://github.com/scottmalin68-commits/repo-integrity-manifest-action",
+  "commit_sha": "66f4d39ddf267fd1b845bfab791aa442082b9255",
+  "files": [
+    {
+      "path": "LICENSE",
+      "sha256": "0f5306e6b1a1e4b1ab405dd0088720da29316e4e8889d43c5c8a813899ec712d",
+      "size_bytes": 1068,
+      "mime_type": "text/plain",
+      "permissions": "644",
+      "is_executable": false,
+      "is_lfs_tracked": false,
+      "entropy": 5.09,
+      "ignore_status": "tracked",
+      "created_at": "2026-02-22T10:11:11-05:00",
+      "contributor_count": 1,
+      "last_commit": {
+        "sha": "7d4b256dfa529b321f5da4ded2ab5b73635a0c28",
+        "author": "Scott Malin",
+        "email": "scottmalin68@gmail.com",
+        "timestamp": "2026-02-22T10:11:11-05:00"
+      }
+    },
+    {
+      "path": "README.md",
+      "sha256": "034d818543f4de15a48398354ae419db09f2dc279bd3dce034be579095616f60",
+      "size_bytes": 32,
+      "mime_type": "text/plain",
+      "permissions": "644",
+      "is_executable": false,
+      "is_lfs_tracked": false,
+      "entropy": 3.87,
+      "ignore_status": "tracked",
+      "created_at": "2026-02-22T10:11:11-05:00",
+      "contributor_count": 1,
+      "last_commit": {
+        "sha": "7d4b256dfa529b321f5da4ded2ab5b73635a0c28",
+        "author": "Scott Malin",
+        "email": "scottmalin68@gmail.com",
+        "timestamp": "2026-02-22T10:11:11-05:00"
+      }
+    },
+    {
+      "path": "action.yml",
+      "sha256": "c92936341cc71b0138794d66d830c75953a651933b75451e8fc85e4bab8fe8ed",
+      "size_bytes": 1067,
+      "mime_type": "text/plain",
+      "permissions": "644",
+      "is_executable": false,
+      "is_lfs_tracked": false,
+      "entropy": 4.3,
+      "ignore_status": "tracked",
+      "created_at": "2026-02-22T10:25:32-05:00",
+      "contributor_count": 1,
+      "last_commit": {
+        "sha": "66f4d39ddf267fd1b845bfab791aa442082b9255",
+        "author": "Scott Malin",
+        "email": "scottmalin68@gmail.com",
+        "timestamp": "2026-02-22T10:40:34-05:00"
+      }
+    },
+    {
+      "path": "generate-manifest.mjs",
+      "sha256": "c7480a35e79a4aefa8bfc13c9b91199494ade951d3882a41dae145b398421b1f",
+      "size_bytes": 5169,
+      "mime_type": "application/javascript",
+      "permissions": "644",
+      "is_executable": false,
+      "is_lfs_tracked": false,
+      "entropy": 4.95,
+      "ignore_status": "tracked",
+      "created_at": "2026-02-22T10:14:01-05:00",
+      "contributor_count": 1,
+      "last_commit": {
+        "sha": "ce15336abb0015c537f571c978d82ba53c9682dd",
+        "author": "Scott Malin",
+        "email": "scottmalin68@gmail.com",
+        "timestamp": "2026-02-22T10:14:01-05:00"
+      }
+    },
+    {
+      "path": "schema.json",
+      "sha256": "0c57882d2db41161e27ce7b80978e1f54e7797e05902a4e0c39a06398a4b9b7c",
+      "size_bytes": 1396,
+      "mime_type": "application/json",
+      "permissions": "644",
+      "is_executable": false,
+      "is_lfs_tracked": false,
+      "entropy": 4.61,
+      "ignore_status": "tracked",
+      "created_at": "2026-02-22T10:12:26-05:00",
+      "contributor_count": 1,
+      "last_commit": {
+        "sha": "3c2cae90d80f4f023f6685650d8ba2b5b0ead503",
+        "author": "Scott Malin",
+        "email": "scottmalin68@gmail.com",
+        "timestamp": "2026-02-22T10:12:26-05:00"
+      }
+    }
+  ]
+}
