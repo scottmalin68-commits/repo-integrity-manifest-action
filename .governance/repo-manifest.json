@@ -1,25 +1,25 @@
 {
   "schema_version": "1.0.0-full",
-  "generated_at": "2026-02-22T18:09:42.333Z",
+  "generated_at": "2026-02-22T18:12:21.144Z",
   "repository": "https://github.com/scottmalin68-commits/repo-integrity-manifest-action",
-  "commit_sha": "312ffc822958c37fabbec941d3d2fd477dfc2b21",
+  "commit_sha": "5b82bd2c59962fe22ee568aaaa6239c9e2e02c4d",
   "files": [
     {
       "path": ".governance/repo-manifest.json",
-      "sha256": "cba04b0f6bf07d787d50db4231c0de65eaabf7848a5ad1d4b9a3795a73e57f18",
-      "size_bytes": 5090,
+      "sha256": "39269b963f987eb14aa252c9a031aecfb267b4aa6424190741d497c110663e4c",
+      "size_bytes": 5091,
       "mime_type": "application/json",
       "permissions": "644",
       "is_executable": false,
       "is_lfs_tracked": false,
-      "entropy": 4.789815628832591,
+      "entropy": 4.793301296982072,
       "ignore_status": "tracked",
       "contributor_count": 0,
       "last_commit": {
-        "sha": "080ff2723f2e76fc6d13cf091472b98974350ff4",
+        "sha": "49f6fa23e745e5375231273bc603084cbdb5f1dd",
         "author": "repo-integrity-bot",
         "email": "bot@users.noreply.github.com",
-        "timestamp": "Sun Feb 22 18:07:43 2026 +0000"
+        "timestamp": "Sun Feb 22 18:09:42 2026 +0000"
       }
     },
     {
@@ -146,6 +146,24 @@
         "author": "Scott Malin",
         "email": "scottmalin68@gmail.com",
         "timestamp": "Sun Feb 22 10:12:26 2026 -0500"
+      }
+    },
+    {
+      "path": "SECURITY.md",
+      "sha256": "14ff0297e797fc760cebffaaeaca6692de05808310b9a17ddb30a37ea5ab6087",
+      "size_bytes": 2019,
+      "mime_type": "text/plain",
+      "permissions": "644",
+      "is_executable": false,
+      "is_lfs_tracked": false,
+      "entropy": 4.7558206042097515,
+      "ignore_status": "tracked",
+      "contributor_count": 0,
+      "last_commit": {
+        "sha": "7bb480866a6924f18fb3030a40681ea4abf6ecb8",
+        "author": "Scott Malin",
+        "email": "scottmalin68@gmail.com",
+        "timestamp": "Sun Feb 22 13:11:50 2026 -0500"
       }
     }
   ]
