@@ -6,6 +6,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.1.0] - 2026-02-22
+### Added
+- Added Markdown manifest generation (`.governance/repo-manifest.md`) for human‑readable governance reporting.
+- Updated composite Action to commit both JSON and Markdown manifests.
+- Enhanced manifest generator to produce a deterministic Markdown table summarizing all repository files.
+
+### Notes
+- Markdown output is generated automatically alongside the JSON manifest with no additional configuration required.
+
+---
+
 ## [1.0.0] - 2026-02-22
 ### Added
 - Initial release of **repo-integrity-manifest-action**.
