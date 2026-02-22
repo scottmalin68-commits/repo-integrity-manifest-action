@@ -19,27 +19,17 @@
 </p>
 
 # 📘 repo-integrity-manifest-action  
-**A governance‑grade GitHub Action that generates a deterministic integrity manifest for every file in your repository — and commits it back automatically.**
+**A governance‑grade GitHub Action that generates deterministic integrity manifests for every file in your repository — in both JSON and Markdown formats — and commits them back automatically.**
 
-This Action creates a cryptographically verifiable snapshot of your repository’s structure and contents.  
+This Action creates cryptographically verifiable snapshots of your repository’s structure and contents.  
 It is designed for **governance**, **compliance**, **security engineering**, and **CI/CD integrity enforcement**.
 
-Every run produces a `.governance/repo-manifest.json` file containing:
+Every run produces two artifacts inside `.governance/`:
 
-- File paths  
-- SHA‑256 hashes  
-- MIME types  
-- File sizes  
-- Permissions  
-- Executable flags  
-- Git LFS tracking status  
-- Shannon entropy  
-- Ignore/tracked/untracked status  
-- Contributor count  
-- First‑seen timestamp  
-- Last commit metadata  
+- `repo-manifest.json` — machine‑readable, complete metadata  
+- `repo-manifest.md` — human‑readable Markdown summary  
 
-This gives you a **deterministic, audit‑ready view** of your repository at every commit.
+Together, they provide a **deterministic, audit‑ready view** of your repository at every commit.
 
 ---
 
@@ -55,7 +45,7 @@ Traditional CI pipelines don’t provide:
 - Entropy analysis  
 - Contributor metadata  
 - Deterministic ordering  
-- A persistent, committed ledger of changes  
+- A persistent, committed ledger  
 
 This Action fills that gap.
 
@@ -79,7 +69,8 @@ It turns your repository into a **verifiable, auditable asset**.
 - 🧠 Entropy scoring for anomaly detection  
 - 📝 Contributor + commit metadata  
 - 🗂️ Deterministic ordering for stable diffs  
-- 🤖 Automatically commits the manifest back to the repo  
+- 🧾 JSON + Markdown manifest generation  
+- 🤖 Automatically commits both manifests back to the repo  
 - 🧩 Composite Action — no dependencies required  
 - 🏗️ Ideal for governance, compliance, and CI enforcement  
 
@@ -91,8 +82,10 @@ On every push or pull request:
 
 1. The Action checks out your repository  
 2. Runs the manifest generator (`generate-manifest.mjs`)  
-3. Writes `.governance/repo-manifest.json`  
-4. Commits the updated manifest back to the repo (if changed)
+3. Writes:
+   - `.governance/repo-manifest.json`
+   - `.governance/repo-manifest.md`
+4. Commits updated manifests back to the repo (if changed)
 
 This creates a **self‑maintaining integrity ledger** for your repository.
 
@@ -100,11 +93,11 @@ This creates a **self‑maintaining integrity ledger** for your repository.
 
 ## 🔄 A Note on Git Pulls and Bot Commits
 
-Because this Action commits the updated integrity manifest back to the repository on every run, you may occasionally see this behavior when pushing your own changes:
+Because this Action commits updated manifests back to the repository on every run, you may occasionally see this behavior when pushing your own changes:
 
 - Your push triggers the workflow  
-- The workflow updates the manifest  
-- The bot commits the updated manifest to `main`  
+- The workflow updates the manifests  
+- The bot commits the updated files to `main`  
 - Your local branch is now behind `origin/main`  
 
 This is expected for governance workflows that auto‑commit artifacts.
@@ -115,8 +108,7 @@ If you see a message requiring you to fetch or pull before pushing, simply run:
 git pull --rebase
 \```
 
-or work in a feature branch and open a pull request.  
-This ensures your changes integrate cleanly with the bot‑generated manifest updates.
+or work in a feature branch and open a pull request.
 
 ---
 
@@ -144,7 +136,7 @@ jobs:
 
 ---
 
-## 📁 Output
+## 📁 Output: JSON Manifest
 
 The Action generates:
 
@@ -171,7 +163,6 @@ Example structure:
       "is_lfs_tracked": false,
       "entropy": 4.12,
       "ignore_status": "tracked",
-      "created_at": "2025-01-01T12:00:00Z",
       "contributor_count": 3,
       "last_commit": {
         "sha": "…",
@@ -183,6 +174,35 @@ Example structure:
   ]
 }
 \```
+
+---
+
+## 📄 Output: Markdown Manifest
+
+The Action also generates a human‑readable Markdown summary:
+
+\```
+.governance/repo-manifest.md
+\```
+
+This file provides a clean, auditor‑friendly table of repository contents.
+
+Example excerpt:
+
+\```markdown
+# Repository Integrity Manifest (Markdown Version)
+
+| Path | SHA‑256 | Size | MIME Type | Entropy | Contributors | Last Commit |
+|------|---------|------|-----------|---------|--------------|-------------|
+| src/index.js | abc123… | 1234 | application/javascript | 4.12 | 3 | 2026‑02‑22 |
+\```
+
+This format is ideal for:
+
+- Governance reports  
+- Security reviews  
+- Documentation  
+- Human‑readable audits  
 
 ---
 
@@ -204,20 +224,19 @@ Future versions may introduce:
 To get the most value from this Action:
 
 ### **1. Use feature branches for development**  
-This avoids frequent fetch/pull cycles caused by bot commits.
+Avoids frequent fetch/pull cycles caused by bot commits.
 
 ### **2. Use `git pull --rebase` instead of `git pull`**  
 Keeps your commit history clean and linear.
 
-### **3. Treat the manifest as a governance artifact**  
-Do not manually edit `.governance/repo-manifest.json`.  
-It is fully managed by the Action.
+### **3. Treat the manifests as governance artifacts**  
+Do not manually edit `.governance/repo-manifest.json` or `.governance/repo-manifest.md`.
 
 ### **4. Run the Action on both `push` and `pull_request`**  
-This ensures integrity checks occur before merging.
+Ensures integrity checks occur before merging.
 
 ### **5. Tag stable releases (`v1`, `v1.0.0`)**  
-This allows other repositories to depend on your Action reliably.
+Allows other repositories to depend on your Action reliably.
 
 ---
 
@@ -244,8 +263,6 @@ Once ready for release:
 1. Create a tag: `v1.0.0`  
 2. Create a moving major tag: `v1`  
 3. Publish to the GitHub Marketplace  
-
-This README is already Marketplace‑ready.
 
 ---
 
