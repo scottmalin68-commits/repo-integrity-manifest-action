@@ -1,0 +1,12 @@
+name: Test Repo Integrity Manifest Action
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Use the action
+        uses: ./
